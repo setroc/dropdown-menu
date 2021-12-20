@@ -12,13 +12,47 @@
 </head>
 <body>
   <header>
-    <ul id="menu">
-      <li>Cursos y carreras</li>
-      <li>Lanzamientos</li>
-      <li>Proyectos</li>
-      <li>Comunidad</li>
+    <ul class="menu">
+      <li>
+        <p>Cursos y carreras</p>
+        <div class="submenu">
+          <ul>
+            <li>
+              <p>Código</p>
+            </li>
+            <li>
+              <p>Data</p>
+            </li>
+            <li class="uxui">
+              <p>
+                <span>UX/UI</span>
+                <span>➜</span>
+              </p>
+              <div class="submenuDos">
+                <ul id="subDos">
+                  <li>UX Writing</li>
+                  <li>Research</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <p>Producto</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <p>Lanzamientos</p>
+      </li>
+      <li>
+        <p>Proyectos</p>
+      </li>
+      <li>
+        <p>Comunidad</p>
+      </li>
     </ul>
-    <div class="submenu none">
+    <!-- <div class="submenu none">
       <ul id="subUno">
         <li>Código</li>
         <li>Data</li>
@@ -35,26 +69,26 @@
         <li>Research</li>
         <li>Figma</li>
       </ul>
-    </div>
+    </div> -->
   </header>
 
   <script>
-    const menu = document.querySelector("#menu").children;
-    const subMenuUno = document.getElementsByClassName("submenu")[0];
-    const subMenuDos = document.getElementsByClassName("submenu")[1];
-    const uxui = document.querySelector("#subUno").children[2];
+    // const menu = document.querySelector("#menu").children;
+    // const subMenuUno = document.getElementsByClassName("submenu")[0];
+    // const subMenuDos = document.getElementsByClassName("submenu")[1];
+    // const uxui = document.querySelector("#subUno").children[2];
     
-    // Agrego funcionalidad a la opción de Cursos y carreras
-    menu[0].addEventListener('click',function () {
-      this.classList.toggle('active');
-      subMenuUno.classList.toggle('none');
-    });
-    // Agrgeo funcionalidad a la opción de UX/UI
-    uxui.addEventListener('click', function() {
-      this.classList.toggle('active');
-      subMenuDos.classList.toggle('none');
+    // // Agrego funcionalidad a la opción de Cursos y carreras
+    // menu[0].addEventListener('click',function () {
+    //   this.classList.toggle('active');
+    //   subMenuUno.classList.toggle('none');
+    // });
+    // // Agrgeo funcionalidad a la opción de UX/UI
+    // uxui.addEventListener('click', function() {
+    //   this.classList.toggle('active');
+    //   subMenuDos.classList.toggle('none');
 
-    });
+    // });
   </script>
 </body>
 </html>
